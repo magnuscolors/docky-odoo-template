@@ -284,7 +284,6 @@ mis-builder:
     modules: []
     src: https://github.com/OCA/mis-builder 11.0
 
-
 operating-unit:
     modules: []
     src: https://github.com/OCA/operating-unit 11.0
@@ -308,3 +307,7 @@ server-backend:
 odoo-usability:
     modules: []
     src: https://github.com/akretion/odoo-usability 12.0
+
+ak-odoo-incubator:
+    modules: []
+    src: https://github.com/akretion/ak-odoo-incubator 10.0

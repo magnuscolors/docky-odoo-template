@@ -43,7 +43,9 @@ services:
     volumes:
       - ./odoo:/odoo
 #      - /home/voodoo/base/.db/socket/:/var/run/postgresql/
-      - ./data:/data
+      - ./data/addons:/data/odoo/addons
+      - ./data/filestore:/data/odoo/filestore
+      - ./data/sessions:/data/odoo/sessions
     command: ["bash"]
     stdin_open: true
     tty: true

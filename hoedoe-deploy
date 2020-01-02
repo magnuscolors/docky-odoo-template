@@ -22,10 +22,48 @@ if [[ -z $1 ]]
             else
                 IMAGENAME=${IMAGE}:${TAG}
             fi
-        export IMAGENAME=${IMAGENAME}
-        env
+fi
+set -e
+
+VERSION="1.24.1"
+DCIMAGE="docker/compose:$VERSION"
+# Setup options for connecting to docker host
+if [ -z "$DOCKER_HOST" ]; then
+    DOCKER_HOST="/var/run/docker.sock"
+fi
+if [ -S "$DOCKER_HOST" ]; then
+    DOCKER_ADDR="-v $DOCKER_HOST:$DOCKER_HOST -e DOCKER_HOST"
+else
+    DOCKER_ADDR="-e DOCKER_HOST -e DOCKER_TLS_VERIFY -e DOCKER_CERT_PATH"
+fi
+# Setup volume mounts for compose config and context
+if [ "$(pwd)" != '/' ]; then
+    VOLUMES="-v $(pwd):$(pwd)"
+fi
+if [ -n "$COMPOSE_FILE" ]; then
+    COMPOSE_OPTIONS="$COMPOSE_OPTIONS -e COMPOSE_FILE=$COMPOSE_FILE"
+    compose_dir=$(realpath $(dirname $COMPOSE_FILE))
+fi
+COMPOSE_OPTIONS="$COMPOSE_OPTIONS -e IMAGENAME=$IMAGENAME"
+# TODO: also check --file argument
+if [ -n "$compose_dir" ]; then
+    VOLUMES="$VOLUMES -v $compose_dir:$compose_dir"
+fi
+if [ -n "$HOME" ]; then
+    VOLUMES="$VOLUMES -v $HOME:$HOME -v $HOME:/root" # mount $HOME in /root to share docker.config
+fi
+# Only allocate tty if we detect one
+if [ -t 0 -a -t 1 ]; then
+        DOCKER_RUN_OPTIONS="$DOCKER_RUN_OPTIONS -t"
+fi
+# Always set -i to support piped and terminal input in run/exec
+DOCKER_RUN_OPTIONS="$DOCKER_RUN_OPTIONS -i"
+# Handle userns security
+if [ ! -z "$(docker info 2>/dev/null | grep userns)" ]; then
+    DOCKER_RUN_OPTIONS="$DOCKER_RUN_OPTIONS --userns=host"
 fi
 
+exec docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE "$@"
 OLDIMAGEID=$(docker images -q --filter=reference=${IMAGENAME})
 
 read -p "Do you want to update the database from the command line? (y/n) " A
@@ -46,7 +84,7 @@ if [[ ${A} = "y" ]]
 fi
 
 # try docker run -it -u root ${VOLUMES} --name hoedoedeploy ${IMAGENAME} bash
-try docker-compose -f docker-compose-hdd.yml up
+try exec docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE " -f docker-compose-hdd.yml up"
 
 
 read -p "Do you want to commit the changes you made to ${IMAGENAME}? (y/n): " B
@@ -106,7 +144,7 @@ elif [[ ${B} = "y" ]]
         if [[ ${I} = "y" ]]
             then
                 cd ${DC_DIR}
-                try docker-compose up -d
+                try exec docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE "up -d"
                 docker ps
                 echo "READY!!!"
         fi
@@ -123,7 +161,7 @@ elif [[ ${D} = "y" ]] && [[ ${F} = "y" ]]
                 if [[ ${J} = "y" ]]
                     then
                         cd ${DC_DIR}
-                        try docker-compose up -d
+                        try exec docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE "up -d"
                         docker ps
                         echo "READY!!!"
                 fi

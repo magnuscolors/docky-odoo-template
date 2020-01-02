@@ -83,7 +83,7 @@ if [[ ${A} = "y" ]]
 fi
 
 # try docker run -it -u root ${VOLUMES} --name hoedoedeploy ${IMAGENAME} bash
-try exec docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE -f docker-compose-hdd.yml up -d
+try docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE -f docker-compose-hdd.yml up -d
 docker attach club3d-prod_hoedoedeploy_1
 
 read -p "Do you want to commit the changes you made to ${IMAGENAME}? (y/n): " B
@@ -143,7 +143,7 @@ elif [[ ${B} = "y" ]]
         if [[ ${I} = "y" ]]
             then
                 cd ${DC_DIR}
-                try exec docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE up -d
+                try docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE up -d
                 docker ps
                 echo "READY!!!"
         fi
@@ -160,7 +160,7 @@ elif [[ ${D} = "y" ]] && [[ ${F} = "y" ]]
                 if [[ ${J} = "y" ]]
                     then
                         cd ${DC_DIR}
-                        try exec docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE up -d
+                        try docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE up -d
                         docker ps
                         echo "READY!!!"
                 fi

@@ -22,7 +22,7 @@ if [[ -z $1 ]]
             else
                 IMAGENAME=${IMAGE}:${TAG}
             fi
-        export IMAGENAME=$IMAGENAME
+        export IMAGENAME=${IMAGENAME}
         env
 fi
 

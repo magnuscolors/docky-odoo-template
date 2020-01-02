@@ -84,7 +84,7 @@ fi
 
 # try docker run -it -u root ${VOLUMES} --name hoedoedeploy ${IMAGENAME} bash
 try exec docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE -f docker-compose-hdd.yml up
-
+docker attach club3d-prod_hoedoedeploy_1
 
 read -p "Do you want to commit the changes you made to ${IMAGENAME}? (y/n): " B
 if [[ ${B} = "y" ]]

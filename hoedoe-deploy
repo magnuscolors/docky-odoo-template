@@ -23,7 +23,7 @@ if [[ -z $1 ]]
                 IMAGENAME=${IMAGE}:${TAG}n
             fi
 fi
-EXPORT IMAGENAME=$IMAGENAME
+export IMAGENAME=$IMAGENAME
 OLDIMAGEID=$(docker images -q --filter=reference=${IMAGENAME})
 
 read -p "Do you want to update the database from the command line? (y/n) " A

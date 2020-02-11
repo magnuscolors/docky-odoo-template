@@ -86,27 +86,27 @@ fi
 try docker run --rm $DOCKER_RUN_OPTIONS $DOCKER_ADDR $COMPOSE_OPTIONS $VOLUMES -w "$(pwd)" $DCIMAGE -f docker-compose-hdd.yml up -d
 docker attach club3d-prod_hoedoedeploy_1
 
-read -p "Do you want to commit the changes you made to ${IMAGENAME}? (y/n): " B
-if [[ ${B} = "y" ]]
-    then
-        try docker commit hoedoedeploy ${IMAGENAME}
-    else
-        read -p "Do you want to commit to a different image? (y/n): " D
-    if [[ ${D} = "y" ]]
-        then
-            read -p "Please specify the IMAGE:TAG you want to commit to:" E
-            echo "Are you sure you want to commit to $E?"
-            read F
-            if [[ ${F} = "y" ]]
-                then
-                    try docker commit hoedoedeploy $E
-                    OLDIMAGEIDALT=$(docker images -q --filter=reference=${E})
-            fi
-    fi
-fi
+#read -p "Do you want to commit the changes you made to ${IMAGENAME}? (y/n): " B
+#if [[ ${B} = "y" ]]
+#    then
+#        try docker commit hoedoedeploy ${IMAGENAME}
+#    else
+#        read -p "Do you want to commit to a different image? (y/n): " D
+#    if [[ ${D} = "y" ]]
+#        then
+#            read -p "Please specify the IMAGE:TAG you want to commit to:" E
+#            echo "Are you sure you want to commit to $E?"
+#            read F
+#            if [[ ${F} = "y" ]]
+#                then
+#                    try docker commit hoedoedeploy $E
+#                    OLDIMAGEIDALT=$(docker images -q --filter=reference=${E})
+#            fi
+#    fi
+#fi
 
 echo "Update-Container hoedoedeploy will now be deleted"
-docker rm hoedoedeploy
+docker rm club3d-prod_hoedoedeploy_1
 
 if [[ ${B} = "y" ]]
     then

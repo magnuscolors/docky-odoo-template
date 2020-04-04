@@ -11,5 +11,5 @@
 /.db/
 /odoo/my_project_name.egg-info/
 /odoo/repo.yaml
-
+/.nginx/data/conf.d/default.conf
 /pip-selfcheck.json

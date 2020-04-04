@@ -6,6 +6,10 @@ account-analytic:
     modules: []
     src: https://github.com/OCA/account-analytic 12.0
 
+account-budgeting:
+    modules: []
+    src: https://github.com/OCA/account-budgeting 12.0
+
 account-closing:
     modules: []
     src: https://github.com/OCA/account-closing 12.0

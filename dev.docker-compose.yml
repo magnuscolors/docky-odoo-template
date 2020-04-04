@@ -1,6 +1,6 @@
 version: "3.7"
 networks:
-  docky10wh_default:
+  base_default:
     external: true
 services:
   db10:
@@ -10,9 +10,9 @@ services:
     image: postgres:10.0
     restart: unless-stopped
     networks:
-      - docky10wh_default
+      - base_default
     volumes:
-      - "data-db10:/var/lib/postgresql/data"
+      - .db:/var/lib/postgresql/data
     ports:
       - 15432:5432
   odoo:
@@ -39,12 +39,12 @@ services:
       - VIRTUAL_HOST=$HOST
       - VIRTUAL_PORT=8069,8072/longpolling
     networks:
-      - docky10wh_default
+      - base_default
     expose:
       - 8069
       - 8072
     volumes:
-      - "nfsmount:/odoo"
+      - .odoo:/odoo
       - ./data/addons:/data/odoo/addons
       - ./data/filestore:/data/odoo/filestore
       - ./data/sessions:/data/odoo/sessions
@@ -83,11 +83,11 @@ services:
 #      - /var/run/docker.sock:/tmp/docker.sock:ro
 #      - ./nginx.tmpl:/etc/docker-gen/templates/nginx.tmpl:ro
 
-volumes:
-  data-db10:
-  nfsmount:
-    driver: local
-    driver_opts:
-      type: nfs
-      o: addr=host.docker.internal,rw,nolock,hard,nointr,nfsvers=3
-      device: ":/Volumes/Case-Sens/voodoo/docky12/odoo"
+#volumes:
+#  data-db10:
+#  nfsmount:
+#    driver: local
+#    driver_opts:
+#      type: nfs
+#      o: addr=host.docker.internal,rw,nolock,hard,nointr,nfsvers=3
+#      device: ":/Volumes/Case-Sens/voodoo/docky12/odoo"

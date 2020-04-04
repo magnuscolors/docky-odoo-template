@@ -2,6 +2,294 @@ odoo:
     modules: []
     src: https://github.com/oca/ocb 12.0
 
+account-analytic:
+    modules: []
+    src: https://github.com/OCA/account-analytic 12.0
+
+account-closing:
+    modules: []
+    src: https://github.com/OCA/account-closing 12.0
+
+account-consolidation:
+    modules: []
+    src: https://github.com/OCA/account-consolidation 12.0
+
+account-financial-reporting:
+    modules: []
+    src: https://github.com/OCA/account-financial-reporting 12.0
+
+account-financial-tools:
+    modules: []
+    src: https://github.com/OCA/account-financial-tools 12.0
+
+account-fiscal-rule:
+    modules: []
+    src: https://github.com/OCA/account-fiscal-rule 12.0
+
+account-invoicing:
+    modules: []
+    src: https://github.com/OCA/account-invoicing 12.0
+
+bank-payment:
+    modules: []
+    src: https://github.com/OCA/bank-payment 12.0
+
+bank-statement-import:
+    modules: []
+    src: https://github.com/OCA/bank-statement-import 12.0
+
+calendar:
+    modules: []
+    src: https://github.com/OCA/calendar 12.0
+
+commission:
+    modules: []
+    src: https://github.com/OCA/commission 12.0
+
+community-data-files:
+    modules: []
+    src: https://github.com/OCA/community-data-files 12.0
+
+connector-cmis:
+    modules: []
+    src: https://github.com/OCA/connector-cmis 12.0
+
+connector-ecommerce:
+    modules: []
+    src: https://github.com/OCA/connector-ecommerce 12.0
+
+connector-magento:
+    modules: []
+    src: https://github.com/OCA/connector-magento 12.0
+
+connector-telephony:
+    modules: []
+    src: https://github.com/OCA/connector-telephony 12.0
+
+connector:
+    modules: []
+    src: https://github.com/OCA/connector 12.0
+
+contract:
+    modules: []
+    src: https://github.com/OCA/contract 12.0
+
+crm:
+    modules: []
+    src: https://github.com/OCA/crm 12.0
+
+data-protection:
+    modules: []
+    src: https://github.com/OCA/data-protection 12.0
+
+delivery-carrier:
+    modules: []
+    src: https://github.com/OCA/delivery-carrier 12.0
+
+donation:
+    modules: []
+    src: https://github.com/OCA/donation 12.0
+
+e-commerce:
+    modules: []
+    src: https://github.com/OCA/e-commerce 12.0
+
+edi:
+    modules: []
+    src: https://github.com/OCA/edi 12.0
+
+event:
+    modules: []
+    src: https://github.com/OCA/event 12.0
+
+geospatial:
+    modules: []
+    src: https://github.com/OCA/geospatial 12.0
+
+hr-timesheet:
+    modules: []
+    src: https://github.com/OCA/hr-timesheet 12.0
+
+hr:
+    modules: []
+    src: https://github.com/OCA/hr 12.0
+
+knowledge:
+    modules: []
+    src: https://github.com/OCA/knowledge 12.0
+
+l10n-netherlands:
+    modules: []
+    src: https://github.com/OCA/l10n-netherlands 12.0
+
+maintenance:
+    modules: []
+    src: https://github.com/OCA/maintenance 12.0
+
+management-system:
+    modules: []
+    src: https://github.com/OCA/management-system 12.0
+
+margin-analysis:
+    modules: []
+    src: https://github.com/OCA/margin-analysis 12.0
+
+multi-company:
+    modules: []
+    src: https://github.com/OCA/multi-company 12.0
+
+mis-builder:
+    modules: []
+    src: https://github.com/OCA/mis-builder 12.0
+
+partner-contact:
+    modules: []
+    src: https://github.com/oca/partner-contact 12.0
+
+product-attribute:
+    modules: []
+    src: https://github.com/OCA/product-attribute 12.0
+
+product-variant:
+    modules: []
+    src: https://github.com/OCA/product-variant 12.0
+
+project-agile:
+    modules: []
+    src: https://github.com/OCA/project-agile 12.0
+
+project-reporting:
+    modules: []
+    src: https://github.com/OCA/project-reporting 12.0
+
+project:
+    modules: []
+    src: https://github.com/OCA/project 12.0
+
+purchase-reporting:
+    modules: []
+    src: https://github.com/OCA/purchase-reporting 12.0
+
+purchase-workflow:
+    modules: []
+    src: https://github.com/OCA/purchase-workflow 12.0
+
+intrastat-extrastat:
+    modules: []
+    src: https://github.com/oca/intrastat-extrastat 12.0
+
+queue:
+    modules: []
+    src: https://github.com/OCA/queue 12.0
+
+reporting-engine:
+    modules: []
+    src: https://github.com/OCA/reporting-engine 12.0
+
+rest-framework:
+    modules: []
+    src: https://github.com/OCA/rest-framework 12.0
+
+rma:
+    modules: []
+    src: https://github.com/OCA/rma 12.0
+
+sale-financial:
+    modules: []
+    src: https://github.com/OCA/sale-financial 12.0
+
+sale-reporting:
+    modules: []
+    src: https://github.com/OCA/sale-reporting 12.0
+
+sale-workflow:
+    modules: []
+    src: https://github.com/OCA/sale-workflow 12.0
+
+server-auth:
+    modules: []
+    src: https://github.com/OCA/server-auth 12.0
+
+social:
+    modules: []
+    src: https://github.com/OCA/social 12.0
+
+stock-logistics-barcode:
+    modules: []
+    src: https://github.com/OCA/stock-logistics-barcode 12.0
+
+stock-logistics-reporting:
+    modules: []
+    src: https://github.com/OCA/stock-logistics-reporting 12.0
+
+stock-logistics-transport:
+    modules: []
+    src: https://github.com/OCA/stock-logistics-transport 12.0
+
+stock-logistics-warehouse:
+    modules: []
+    src: https://github.com/OCA/stock-logistics-warehouse 12.0
+
+stock-logistics-workflow:
+    modules: []
+    src: https://github.com/OCA/stock-logistics-workflow 12.0
+
+#vertical-agriculture:
+#    modules: []
+#    src: https://github.com/OCA/vertical-agriculture 12.0
+#
+#vertical-association:
+#    modules: []
+#    src: https://github.com/OCA/vertical-association 12.0
+#
+#vertical-construction:
+#    modules: []
+#    src: https://github.com/OCA/vertical-construction 12.0
+#
+#vertical-edition:
+#    modules: []
+#    src: https://github.com/OCA/vertical-edition 12.0
+#
+#vertical-education:
+#    modules: []
+#    src: https://github.com/OCA/vertical-education 12.0
+#
+#vertical-isp:
+#    modules: []
+#    src: https://github.com/OCA/vertical-isp 12.0
+#
+#vertical-medical:
+#    modules: []
+#    src: https://github.com/OCA/vertical-medical 12.0
+#
+#vertical-travel:
+#    modules: []
+#    src: https://github.com/OCA/vertical-travel 12.0
+
+web:
+    modules: []
+    src: https://github.com/OCA/web 12.0
+
+webkit-tools:
+    modules: []
+    src: https://github.com/OCA/webkit-tools 12.0
+
+website-cms:
+    modules: []
+    src: https://github.com/OCA/website-cms 12.0
+
+account-reconcile:
+    modules: []
+    src: https://github.com/OCA/account-reconcile 12.0
+
+#misc:
+#    modules: []
+#    src: https://github.com/magnuscolors/misc 12.0
+
+operating-unit:
+    modules: []
+    src: https://github.com/oca/operating-unit 12.0
+
 server-tools:
     modules: [disable_odoo_online]
     src: https://github.com/oca/server-tools 12.0

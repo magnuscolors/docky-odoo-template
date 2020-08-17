@@ -1,6 +1,6 @@
 version: "3.7"
 networks:
-  base_default:
+  docky10wh_default:
     external: true
 services:
   db10:
@@ -10,7 +10,7 @@ services:
     image: postgres:10.0
     restart: unless-stopped
     networks:
-      - base_default
+      - docky10wh_default
     volumes:
       - .db:/var/lib/postgresql/data
     ports:
@@ -39,12 +39,12 @@ services:
       - VIRTUAL_HOST=$HOST
       - VIRTUAL_PORT=8069,8072/longpolling
     networks:
-      - base_default
+      - docky10wh_default
     expose:
       - 8069
       - 8072
     volumes:
-      - .odoo:/odoo
+      - ./odoo:/odoo
       - ./data/addons:/data/odoo/addons
       - ./data/filestore:/data/odoo/filestore
       - ./data/sessions:/data/odoo/sessions

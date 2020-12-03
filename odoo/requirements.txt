@@ -1,0 +1,10 @@
+pdf2image
+zpl2
+pathlib
+httplib2
+geojson
+ftputil
+fs==0.5.4
+jira
+oauthlib
+pyPostcode

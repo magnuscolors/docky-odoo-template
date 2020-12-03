@@ -6,7 +6,7 @@ with open('VERSION') as fd:
     version = fd.read().strip()
 
 setup(
-    name="club3d",
+    name="docky10whimac",
     version=version,
     description="project description",
     license='GNU Affero General Public License v3 or later (AGPLv3+)',

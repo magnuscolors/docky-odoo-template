@@ -1,0 +1,310 @@
+
+account-analytic:
+    modules: []
+    src: https://github.com/OCA/account-analytic 10.0
+
+account-closing:
+    modules: []
+    src: https://github.com/OCA/account-closing 10.0
+
+account-consolidation:
+    modules: []
+    src: https://github.com/OCA/account-consolidation 10.0
+
+account-financial-reporting:
+    modules: []
+    src: https://github.com/OCA/account-financial-reporting 10.0
+
+account-financial-tools:
+    modules: []
+    src: https://github.com/OCA/account-financial-tools 10.0
+
+account-fiscal-rule:
+    modules: []
+    src: https://github.com/OCA/account-fiscal-rule 10.0
+
+account-invoicing:
+    modules: []
+    src: https://github.com/OCA/account-invoicing 10.0
+
+bank-payment:
+    modules: []
+    src: https://github.com/OCA/bank-payment 10.0
+
+bank-statement-import:
+    modules: []
+    src: https://github.com/OCA/bank-statement-import 10.0
+
+calendar:
+    modules: []
+    src: https://github.com/OCA/calendar 10.0
+
+commission:
+    modules: []
+    src: https://github.com/OCA/commission 10.0
+
+community-data-files:
+    modules: []
+    src: https://github.com/OCA/community-data-files 10.0
+
+connector-cmis:
+    modules: []
+    src: https://github.com/OCA/connector-cmis 10.0
+
+connector-ecommerce:
+    modules: []
+    src: https://github.com/OCA/connector-ecommerce 10.0
+
+connector-magento:
+    modules: []
+    src: https://github.com/OCA/connector-magento 10.0
+
+connector-telephony:
+    modules: []
+    src: https://github.com/OCA/connector-telephony 10.0
+
+connector:
+    modules: []
+    src: https://github.com/OCA/connector 10.0
+
+contract:
+    modules: []
+    src: https://github.com/OCA/contract 10.0
+
+crm:
+    modules: []
+    src: https://github.com/OCA/crm 10.0
+
+data-protection:
+    modules: []
+    src: https://github.com/OCA/data-protection 10.0
+
+delivery-carrier:
+    modules: []
+    src: https://github.com/OCA/delivery-carrier 10.0
+
+donation:
+    modules: []
+    src: https://github.com/OCA/donation 10.0
+
+e-commerce:
+    modules: []
+    src: https://github.com/OCA/e-commerce 10.0
+
+edi:
+    modules: []
+    src: https://github.com/OCA/edi 10.0
+
+event:
+    modules: []
+    src: https://github.com/OCA/event 10.0
+
+geospatial:
+    modules: []
+    src: https://github.com/OCA/geospatial 10.0
+
+hr-timesheet:
+    modules: []
+    src: https://github.com/OCA/hr-timesheet 10.0
+
+hr:
+    modules: []
+    src: https://github.com/OCA/hr 10.0
+
+knowledge:
+    modules: []
+    src: https://github.com/OCA/knowledge 10.0
+
+l10n-netherlands:
+    modules: []
+    src: https://github.com/OCA/l10n-netherlands 10.0
+
+maintenance:
+    modules: []
+    src: https://github.com/OCA/maintenance 10.0
+
+management-system:
+    modules: []
+    src: https://github.com/OCA/management-system 10.0
+
+margin-analysis:
+    modules: []
+    src: https://github.com/OCA/margin-analysis 10.0
+
+multi-company:
+    modules: []
+    src: https://github.com/OCA/multi-company 10.0
+
+mis-builder:
+    modules: []
+    src: https://github.com/OCA/mis-builder 10.0
+
+partner-contact:
+    modules: []
+    src: https://github.com/magnuscolors/partner-contact 498-508merged
+
+product-attribute:
+    modules: []
+    src: https://github.com/OCA/product-attribute 10.0
+
+product-variant:
+    modules: []
+    src: https://github.com/OCA/product-variant 10.0
+
+project-agile:
+    modules: []
+    src: https://github.com/OCA/project-agile 10.0
+
+project-reporting:
+    modules: []
+    src: https://github.com/OCA/project-reporting 10.0
+
+project:
+    modules: []
+    src: https://github.com/OCA/project 10.0
+
+purchase-reporting:
+    modules: []
+    src: https://github.com/OCA/purchase-reporting 10.0
+
+purchase-workflow:
+    modules: []
+    src: https://github.com/OCA/purchase-workflow 10.0
+
+intrastat-extrastat:
+    modules: []
+    src: https://github.com/oca/intrastat-extrastat 10.0
+
+queue:
+    modules: []
+    src: https://github.com/OCA/queue 10.0
+
+reporting-engine:
+    modules: []
+    src: https://github.com/OCA/reporting-engine 10.0
+
+rest-framework:
+    modules: []
+    src: https://github.com/OCA/rest-framework 10.0
+
+rma:
+    modules: []
+    src: https://github.com/OCA/rma 10.0
+
+sale-financial:
+    modules: []
+    src: https://github.com/OCA/sale-financial 10.0
+
+sale-reporting:
+    modules: []
+    src: https://github.com/OCA/sale-reporting 10.0
+
+sale-workflow:
+    modules: []
+    src: https://github.com/OCA/sale-workflow 10.0
+
+server-auth:
+    modules: []
+    src: https://github.com/OCA/server-auth 10.0
+
+social:
+    modules: []
+    src: https://github.com/OCA/social 10.0
+
+stock-logistics-barcode:
+    modules: []
+    src: https://github.com/OCA/stock-logistics-barcode 10.0
+
+stock-logistics-reporting:
+    modules: []
+    src: https://github.com/OCA/stock-logistics-reporting 10.0
+
+stock-logistics-transport:
+    modules: []
+    src: https://github.com/OCA/stock-logistics-transport 10.0
+
+stock-logistics-warehouse:
+    modules: []
+    src: https://github.com/OCA/stock-logistics-warehouse 10.0
+
+stock-logistics-workflow:
+    modules: []
+    src: https://github.com/OCA/stock-logistics-workflow 10.0
+
+vertical-agriculture:
+    modules: []
+    src: https://github.com/OCA/vertical-agriculture 10.0
+
+vertical-association:
+    modules: []
+    src: https://github.com/OCA/vertical-association 10.0
+
+vertical-construction:
+    modules: []
+    src: https://github.com/OCA/vertical-construction 10.0
+
+vertical-edition:
+    modules: []
+    src: https://github.com/OCA/vertical-edition 10.0
+
+vertical-education:
+    modules: []
+    src: https://github.com/OCA/vertical-education 10.0
+
+vertical-isp:
+    modules: []
+    src: https://github.com/OCA/vertical-isp 10.0
+
+vertical-medical:
+    modules: []
+    src: https://github.com/OCA/vertical-medical 10.0
+
+vertical-travel:
+    modules: []
+    src: https://github.com/OCA/vertical-travel 10.0
+
+web:
+    modules: []
+    src: https://github.com/OCA/web 10.0
+
+webkit-tools:
+    modules: []
+    src: https://github.com/OCA/webkit-tools 10.0
+
+website-cms:
+    modules: []
+    src: https://github.com/OCA/website-cms 10.0
+
+connector-jira:
+    modules: []
+    src: https://github.com/magnuscolors/connector-jira 10.0
+
+odoo:
+    modules: []
+    src: https://github.com/magnuscolors/OCB indexonforeignkey
+
+account-reconcile:
+    modules: []
+    src: https://github.com/OCA/account-reconcile 10.0
+
+connector-interfaces:
+    modules: []
+    src: https://github.com/magnuscolors/connector-interfaces 10.0
+
+magnus-addons:
+    modules: []
+    src: https://github.com/magnuscolors/magnus-addons 10.0
+
+misc:
+    modules: []
+    src: https://github.com/magnuscolors/misc 10.0
+
+operating-unit:
+    modules: []
+    src: https://github.com/magnuscolors/operating-unit 10.0
+
+
+
+server-tools:
+    modules: []
+    src: https://github.com/magnuscolors/server-tools efl-and-auto-join-patch

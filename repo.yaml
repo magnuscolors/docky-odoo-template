@@ -1,0 +1,616 @@
+./external-src/account-analytic:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/account-analytic
+  target: origin 10.0
+./external-src/account-closing:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/account-closing
+  target: origin 10.0
+./external-src/account-consolidation:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/account-consolidation
+  target: origin 10.0
+./external-src/account-financial-reporting:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/account-financial-reporting
+  target: origin 10.0
+./external-src/account-financial-tools:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/account-financial-tools
+  target: origin 10.0
+./external-src/account-fiscal-rule:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/account-fiscal-rule
+  target: origin 10.0
+./external-src/account-invoicing:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/account-invoicing
+  target: origin 10.0
+./external-src/account-reconcile:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/account-reconcile
+  target: origin 10.0
+./external-src/bank-payment:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/bank-payment
+  target: origin 10.0
+./external-src/bank-statement-import:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/bank-statement-import
+  target: origin 10.0
+./external-src/calendar:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/calendar
+  target: origin 10.0
+./external-src/commission:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/commission
+  target: origin 10.0
+./external-src/community-data-files:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/community-data-files
+  target: origin 10.0
+./external-src/connector:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/connector
+  target: origin 10.0
+./external-src/connector-cmis:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/connector-cmis
+  target: origin 10.0
+./external-src/connector-ecommerce:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/connector-ecommerce
+  target: origin 10.0
+./external-src/connector-interfaces:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/magnuscolors/connector-interfaces
+  target: origin 10.0
+./external-src/connector-jira:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/magnuscolors/connector-jira
+  target: origin 10.0
+./external-src/connector-magento:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/connector-magento
+  target: origin 10.0
+./external-src/connector-telephony:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/connector-telephony
+  target: origin 10.0
+./external-src/contract:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/contract
+  target: origin 10.0
+./external-src/crm:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/crm
+  target: origin 10.0
+./external-src/data-protection:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/data-protection
+  target: origin 10.0
+./external-src/delivery-carrier:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/delivery-carrier
+  target: origin 10.0
+./external-src/donation:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/donation
+  target: origin 10.0
+./external-src/e-commerce:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/e-commerce
+  target: origin 10.0
+./external-src/edi:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/edi
+  target: origin 10.0
+./external-src/event:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/event
+  target: origin 10.0
+./external-src/geospatial:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/geospatial
+  target: origin 10.0
+./external-src/hr:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/hr
+  target: origin 10.0
+./external-src/hr-timesheet:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/hr-timesheet
+  target: origin 10.0
+./external-src/intrastat-extrastat:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/oca/intrastat-extrastat
+  target: origin 10.0
+./external-src/knowledge:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/knowledge
+  target: origin 10.0
+./external-src/l10n-netherlands:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/l10n-netherlands
+  target: origin 10.0
+./external-src/magnus-addons:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/magnuscolors/magnus-addons
+  target: origin 10.0
+./external-src/maintenance:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/maintenance
+  target: origin 10.0
+./external-src/management-system:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/management-system
+  target: origin 10.0
+./external-src/margin-analysis:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/margin-analysis
+  target: origin 10.0
+./external-src/mis-builder:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/mis-builder
+  target: origin 10.0
+./external-src/misc:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/magnuscolors/misc
+  target: origin 10.0
+./external-src/multi-company:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/multi-company
+  target: origin 10.0
+./external-src/operating-unit:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/magnuscolors/operating-unit
+  target: origin 10.0
+./external-src/partner-contact:
+  default:
+    depth: 20
+  merges:
+  - origin 498-508merged
+  remotes:
+    origin: https://github.com/magnuscolors/partner-contact
+  target: origin 498-508merged
+./external-src/product-attribute:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/product-attribute
+  target: origin 10.0
+./external-src/product-variant:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/product-variant
+  target: origin 10.0
+./external-src/project:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/project
+  target: origin 10.0
+./external-src/project-agile:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/project-agile
+  target: origin 10.0
+./external-src/project-reporting:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/project-reporting
+  target: origin 10.0
+./external-src/purchase-reporting:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/purchase-reporting
+  target: origin 10.0
+./external-src/purchase-workflow:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/purchase-workflow
+  target: origin 10.0
+./external-src/queue:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/magnuscolors/queue
+  target: origin 10.0
+./external-src/reporting-engine:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/reporting-engine
+  target: origin 10.0
+./external-src/rest-framework:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/rest-framework
+  target: origin 10.0
+./external-src/rma:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/rma
+  target: origin 10.0
+./external-src/sale-financial:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/sale-financial
+  target: origin 10.0
+./external-src/sale-reporting:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/sale-reporting
+  target: origin 10.0
+./external-src/sale-workflow:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/sale-workflow
+  target: origin 10.0
+./external-src/server-auth:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/server-auth
+  target: origin 10.0
+./external-src/server-tools:
+  default:
+    depth: 20
+  merges:
+  - origin efl-and-auto-join-patch
+  remotes:
+    origin: https://github.com/magnuscolors/server-tools
+  target: origin efl-and-auto-join-patch
+./external-src/social:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/social
+  target: origin 10.0
+./external-src/stock-logistics-barcode:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-barcode
+  target: origin 10.0
+./external-src/stock-logistics-reporting:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-reporting
+  target: origin 10.0
+./external-src/stock-logistics-transport:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-transport
+  target: origin 10.0
+./external-src/stock-logistics-warehouse:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-warehouse
+  target: origin 10.0
+./external-src/stock-logistics-workflow:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/stock-logistics-workflow
+  target: origin 10.0
+./external-src/vertical-agriculture:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/vertical-agriculture
+  target: origin 10.0
+./external-src/vertical-association:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/vertical-association
+  target: origin 10.0
+./external-src/vertical-construction:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/vertical-construction
+  target: origin 10.0
+./external-src/vertical-edition:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/vertical-edition
+  target: origin 10.0
+./external-src/vertical-education:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/vertical-education
+  target: origin 10.0
+./external-src/vertical-isp:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/vertical-isp
+  target: origin 10.0
+./external-src/vertical-medical:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/vertical-medical
+  target: origin 10.0
+./external-src/vertical-travel:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/vertical-travel
+  target: origin 10.0
+./external-src/web:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/web
+  target: origin 10.0
+./external-src/webkit-tools:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/webkit-tools
+  target: origin 10.0
+./external-src/website-cms:
+  default:
+    depth: 20
+  merges:
+  - origin 10.0
+  remotes:
+    origin: https://github.com/OCA/website-cms
+  target: origin 10.0
+src:
+  default:
+    depth: 20
+  merges:
+  - origin indexonforeignkey
+  remotes:
+    origin: https://github.com/magnuscolors/OCB
+  target: origin indexonforeignkey

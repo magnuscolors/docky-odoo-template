@@ -1,7 +1,7 @@
 version: "3.7"
-networks:
-  docky10wh_default:
-    external: true
+#networks:
+#  docky10wh_default:
+#    external: true
 services:
   db10:
     environment:
@@ -9,17 +9,17 @@ services:
       - POSTGRES_DB=$PGDATABASE
     image: postgres:10.0
     restart: unless-stopped
-    networks:
-      - docky10wh_default
+#    networks:
+#      - docky10wh_default
     volumes:
       - .db:/var/lib/postgresql/data
     ports:
-      - 15432:5432
+      - 5432:5432
   odoo:
     build: odoo
     environment:
       - MIGRATE=false
-      - PYTHONDONTWRITEBYTECODE=True
+      - PYTHONDONTWRITEBYTECODE=False
       - LOCAL_USER_ID=$UID
       - RUNNING_ENV=$ENV
       - DB_HOST=$PGHOST
@@ -30,7 +30,7 @@ services:
       - PGDATABASE=$PGDATABASE
       - PGUSER=$PGUSER
       - PGPASSWORD=$PGPASSWORD
-      - DB_FILTER=xxx.*
+      - DB_FILTER=.*
       - ADMIN_PASSWD=ButNoS1mpler
       - LIST_DB=True
       - LIMIT_TIME_CPU=6000

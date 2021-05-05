@@ -194,9 +194,9 @@ rest-framework:
     modules: []
     src: https://github.com/OCA/rest-framework 12.0
 
-rma:
-    modules: []
-    src: https://github.com/OCA/rma 12.0
+#rma:
+#    modules: []
+#    src: https://github.com/OCA/rma 12.0
 
 sale-financial:
     modules: []
@@ -218,25 +218,25 @@ social:
     modules: []
     src: https://github.com/OCA/social 12.0
 
-stock-logistics-barcode:
-    modules: []
-    src: https://github.com/OCA/stock-logistics-barcode 12.0
+#stock-logistics-barcode:
+#    modules: []
+#    src: https://github.com/OCA/stock-logistics-barcode 12.0
+#
+#stock-logistics-reporting:
+#    modules: []
+#    src: https://github.com/OCA/stock-logistics-reporting 12.0
+#
+#stock-logistics-transport:
+#    modules: []
+#    src: https://github.com/OCA/stock-logistics-transport 12.0
+#
+#stock-logistics-warehouse:
+#    modules: []
+#    src: https://github.com/OCA/stock-logistics-warehouse 12.0
 
-stock-logistics-reporting:
-    modules: []
-    src: https://github.com/OCA/stock-logistics-reporting 12.0
-
-stock-logistics-transport:
-    modules: []
-    src: https://github.com/OCA/stock-logistics-transport 12.0
-
-stock-logistics-warehouse:
-    modules: []
-    src: https://github.com/OCA/stock-logistics-warehouse 12.0
-
-stock-logistics-workflow:
-    modules: []
-    src: https://github.com/OCA/stock-logistics-workflow 12.0
+#stock-logistics-workflow:
+#    modules: []
+#    src: https://github.com/OCA/stock-logistics-workflow 12.0
 
 #vertical-agriculture:
 #    modules: []

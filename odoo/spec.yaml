@@ -308,7 +308,7 @@ server-backend:
 
 server-brand:
     modules: [ ]
-    src: https://github.com/oca/server-branding 12.0
+    src: https://github.com/oca/server-brand 12.0
 
 server-env:
     modules: [ ]

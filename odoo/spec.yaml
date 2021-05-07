@@ -306,7 +306,7 @@ server-backend:
     modules: [ ]
     src: https://github.com/oca/server-backend 12.0
 
-server-branding:
+server-brand:
     modules: [ ]
     src: https://github.com/oca/server-branding 12.0
 

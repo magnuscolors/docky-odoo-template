@@ -1,8 +1,8 @@
-networks:
-    base_default:
-      external: true
-    backend:
-      driver: bridge
+#networks:
+#    base_default:
+#      external: true
+#    backend:
+#      driver: bridge
 services:
   db10:
     environment:
@@ -10,18 +10,18 @@ services:
       - POSTGRES_DB=db
     image: postgres:10
     restart: unless-stopped
-    networks:
-      backend:
-        aliases:
-          - pg10
+#    networks:
+#      backend:
+#        aliases:
+#          - pg10
     volumes:
       - .db/data/:/var/lib/postgresql/data
 #      - .db/socket/:/var/run/postgresql/
     ports:
-      - 15432:5432
+      - 5432:5432
   odoo:
     build: odoo
-#    image: docky_club3d11_odoo:latest
+    image: app_backend_odoo:latest
     environment:
       - MIGRATE=false
       - PYTHONDONTWRITEBYTECODE=True
@@ -31,18 +31,17 @@ services:
       - DB_NAME=db
       - RUNNING_ENV=dev
 #      - MARABUNTA_MODE=demo
-      - VIRTUAL_HOST=club3d11.dy
+      - VIRTUAL_HOST=app-backend
       - VIRTUAL_PORT=8069,8072/longpolling
 #    user: odoo
     expose:
       - 8069
       - 8072
-    networks:
-      - base_default
-      - backend
+#    networks:
+#      - base_default
+#      - backend
     volumes:
       - ./odoo:/odoo
-#      - /home/voodoo/base/.db/socket/:/var/run/postgresql/
       - ./data/addons:/data/odoo/addons
       - ./data/filestore:/data/odoo/filestore
       - ./data/sessions:/data/odoo/sessions
